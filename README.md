@@ -9,3 +9,11 @@ Atom.io syntax highlighting inspired by the node js website
 ## To-Do
 
 * Improve overall color-contrast & language support
+
+
+## Private To-Do
+- Add new colors
+- Refine highlighting on semicolons, colons, and hyphens
+- Refine Scrollbar colors
+- Refine scrollbar color contrast
+- Add further language support
