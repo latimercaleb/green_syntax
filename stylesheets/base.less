@@ -3,6 +3,7 @@
 // See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
 // for a full listing of what's available.
 @import "ui-variables";
+@import "syntax-variables";
 @import "colors";
 
 atom-text-editor {
@@ -27,7 +28,7 @@ atom-text-editor {
 
   .gutter .line-number {
     opacity: 1;
-    color: @dark-grey;
+    color: @olive;
   }
 
   .gutter .line-number.folded,
@@ -63,7 +64,7 @@ atom-text-editor {
 
 
 .syntax--comment {
-  color: @base01;
+  color: @base0;
   font-style: italic;
 }
 
@@ -89,7 +90,7 @@ atom-text-editor {
   color: @medium-green;
 
   &.syntax--operator {
-    color: @white;
+    color: @spring;
   }
 }
 
@@ -249,4 +250,24 @@ atom-text-editor {
 
 .syntax--property-name {
   color: @subtle-green;
+}
+
+// needs some tweaking
+.scrollbars-visible-always {
+/deep/ ::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+
+&-track {
+  border: 0px;
+  border-radius: 0px;
+  background-color: @olive !important;
+}
+
+&-thumb {
+  background-color:@olive !important;
+  border: 0px;
+  border-radius: 0px;
+}
+}
 }
