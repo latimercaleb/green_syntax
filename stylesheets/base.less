@@ -7,7 +7,7 @@
 @import "colors";
 
 atom-text-editor {
-  background-color: @brown;
+  background-color: @carbon-black;
   color: @dusty-grey;
 
   .syntax--html {
@@ -23,12 +23,12 @@ atom-text-editor {
   }
 
   .gutter {
-    background-color: @brown;
+    background-color: @carbon-black;
   }
 
   .gutter .line-number {
     opacity: 1;
-    color: @olive;
+    color: @spring;
   }
 
   .gutter .line-number.folded,
@@ -64,7 +64,7 @@ atom-text-editor {
 
 
 .syntax--comment {
-  color: @base0;
+  color: @olive;
   font-style: italic;
 }
 
@@ -90,7 +90,7 @@ atom-text-editor {
   color: @medium-green;
 
   &.syntax--operator {
-    color: @spring;
+    color: @white;
   }
 }
 
@@ -252,22 +252,19 @@ atom-text-editor {
   color: @subtle-green;
 }
 
-// needs some tweaking
-.scrollbars-visible-always {
-/deep/ ::-webkit-scrollbar {
-width: 15px;
-height: 15px;
+::-webkit-scrollbar {
+    &-thumb {
+      background-color:@spring !important;
+    }
+    &-track {
+      background-color: @carbon-black !important;
+    }
+    &-corner{
+      background-color: @spring !important;
+       border-radius: 5px !important;
+    }
+  }
 
-&-track {
-  border: 0px;
-  border-radius: 0px;
-  background-color: @olive !important;
-}
-
-&-thumb {
-  background-color:@olive !important;
-  border: 0px;
-  border-radius: 0px;
-}
-}
-}
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px !important;
+  }
