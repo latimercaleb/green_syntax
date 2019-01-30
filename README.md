@@ -13,8 +13,8 @@ Atom.io syntax highlighting inspired by the node js website
 
 ## Private To-Do
 - ~~Add new colors~~
-- Refine highlighting on semicolons, colons, and hyphens
-- Refine Scrollbar colors
-- Refine scrollbar color contrast
-- Add further language support
-- Double check hue & tint contrast and refine approach
+- ~~Refine Scrollbar colors~~
+- ~~Refine scrollbar color contrast~~
+- ~~Double check hue & tint contrast and refine approach~~
+-  Refine highlighting on semicolons, colons, and hyphens
+-  Add further language support
