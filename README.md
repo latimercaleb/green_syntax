@@ -16,5 +16,7 @@ Atom.io syntax highlighting inspired by the node js website
 - ~~Refine Scrollbar colors~~
 - ~~Refine scrollbar color contrast~~
 - ~~Double check hue & tint contrast and refine approach~~
--  Refine highlighting on semicolons, colons, and hyphens
+-  ~~Refine highlighting on semicolons, colons, and hyphens~~
+- Define what languages to add support for, best to use the ones I'm familiar with for testing
+- Maybe some less tests?
 -  Add further language support

@@ -2,18 +2,90 @@
 //
 // See https://github.com/atom/atom-dark-ui/blob/master/stylesheets/ui-variables.less
 // for a full listing of what's available.
+
+// Languages:
+/*
+  - Java
+  - Python
+  - F#
+  - Php
+*/
 @import "ui-variables";
 @import "syntax-variables";
 @import "colors";
 
 atom-text-editor {
   background-color: @carbon-black;
-  color: @smoke;
+  color: @pearl;
 
   .syntax--html {
-    color: @dusty-grey;
-    &.syntax--string {
-      color: @white-yellow;
+    color: @mink;
+    .syntax--entity{
+      color: @sage;
+    }
+    .syntax--comment{
+      color: @tea;
+    }
+  }
+
+  .syntax--md{
+    .syntax--punctuation{
+      color: @mint;
+    }
+    .syntax--text {
+      color: @pearl;
+    }
+    .syntax--markup{
+      color: @mint;
+    }
+  }
+
+  .syntax--js{
+    .syntax--storage.syntax--type{
+      color: @emerald;
+    }
+    .syntax--keyword{
+      color: @bright-green;
+    }
+    .syntax--keyword.syntax--operator {
+      color: @neon;
+    }
+    .syntax--property.syntax--unquoted{
+      color: @tea;
+    }
+    .syntax--class{
+      color: @subtle-green;
+    }
+    .syntax--delimiter{
+      color: @neon;
+    }
+  }
+
+  .syntax--vbs{
+    color: @pearl;
+    .syntax--storage{
+      color: @emerald;
+    }
+    .syntax--type{
+      color: @sage;
+    }
+    .syntax--keyword{
+      color: @mint;
+    }
+    .syntax--quoted{
+      color: @sage;
+    }
+    .syntax--comment{
+      color: @tea;
+    }
+    .syntax--punctuation{
+      color: @subtle-green;
+    }
+  }
+
+  .syntax--cs{
+    .syntax--comment{
+      color: @tea;
     }
   }
 
@@ -62,7 +134,6 @@ atom-text-editor {
   }
 }
 
-
 .syntax--comment {
   color: @olive;
   font-style: italic;
@@ -76,11 +147,11 @@ atom-text-editor {
   }
 
   &.syntax--tag {
-    color: @sage;
+    color: @medium-green
   }
 
   &.syntax--attribute-name {
-    color: @white;
+    color: @white
   }
 
 }
@@ -252,7 +323,7 @@ atom-text-editor {
   color: @subtle-green;
 }
 
-// scrollbar colors
+// Scrollbar modifications
 ::-webkit-scrollbar {
     &-thumb {
       background-color:@spring !important;
@@ -262,7 +333,7 @@ atom-text-editor {
     }
     &-corner{
       background-color: @spring !important;
-      border-radius: 5px !important;
+       border-radius: 5px !important;
     }
   }
 
